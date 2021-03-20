@@ -1,3 +1,10 @@
+This project is based off a repository owned by Jamie West on GitHub, downloaded
+from https://github.com/jamiewest/XamarinHosting
+in March 2021. As it was marked as "not actively maintained and... outdated"
+we chose to download the code and maintain our own version, which is permitted
+under the copyright owner's MIT licence, copied below:
+
+
 Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
