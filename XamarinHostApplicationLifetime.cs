@@ -40,7 +40,8 @@ namespace Microsoft.Extensions.Hosting
         {
             try
             {
-                (ApplicationSleeping as LifecycleRegister).Notify();
+                var register = ApplicationSleeping as LifecycleRegister;
+                register?.Notify();
             }
             catch (Exception ex)
             {
@@ -59,7 +60,8 @@ namespace Microsoft.Extensions.Hosting
         {
             try
             {
-                (ApplicationResuming as LifecycleRegister).Notify();
+                var register = ApplicationResuming as LifecycleRegister;
+                register?.Notify();
             }
             catch (Exception ex)
             {
