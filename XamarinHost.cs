@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using Energetic.Clients.Xamarin.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Logging;
@@ -29,7 +30,7 @@ namespace Microsoft.Extensions.Hosting
             })
             .ConfigureLogging((hostingContext, logging) =>
             {
-                logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
+                logging.AddConfiguration(hostingContext.Configuration.GetSection(ConfigurationKeys.Logging));
                 logging.AddDebug();
             })
             .UseDefaultServiceProvider((context, options) =>
